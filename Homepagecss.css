@@ -1,0 +1,146 @@
+/* CSS Document */
+body{
+background-image: url(glitch.gif);
+height: 100vh;
+background-size: cover;
+font-family: arial;
+font-weight: bold;
+color: #f0e7c2;
+letter-spacing: 0px;
+margin-right: 3px;
+}
+
+ul {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 10px;
+    padding: 0px;
+    list-style: none;
+}
+
+ul li {
+    float: left;
+    width: 200px;
+    height: 40px;
+    opacity: .8;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px
+
+}
+ul li a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+
+ul li a:hover {
+    color: rgb(255, 0, 0);
+}
+ul li ul li {
+    display: none;
+}
+ul li:hover ul li {
+    display: block;
+    
+}
+
+.flicker-heading {
+    font-size: 40px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    animation: glitch-flicker 4s infinite;
+}
+
+@keyframes glitch-flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+    }
+    20%, 24%, 55% {
+    opacity: 0; 
+    text-shadow: none;
+    }
+
+}
+
+h2{
+    font-family: 'Courier New', Courier, monospace;
+    color: red;
+}
+
+.info{
+    margin-left: -10%;
+    margin-top: 28%;
+
+}
+
+.info a{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 0, 0);
+    background: rgb(255, 255, 255);
+    margin: 5px 0;
+    padding: 10px 18px;
+    border-radius: 20px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover{
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#glitch-pic {
+    width: 400px;  /* Match your original image size */
+    height: 500px; 
+    background-image: url(nethglitch.png); /* Your normal image */
+    background-size: cover;
+    margin-left: 110%;
+    margin-top: -60%;
+    position: relative;
+  /* This runs the 'glitch-cycle' every 5 seconds forever */
+    animation: glitch-cycle 5s infinite;
+}
+
+@keyframes glitch-cycle {
+  /* 0% to 94%: The image stays normal and still */
+    0%, 94% { 
+    background-image: url(nethglitch.png); 
+    transform: translate(0,0); 
+    filter: brightness(1);
+    }
+
+  /* 95%: The 'Glitch' happens - it shakes and swaps to the scary image */
+    95% { 
+    background-image: url(nethglitchhorror.png); 
+    transform: translate(5px, -5px);
+    filter: brightness(2) contrast(2); /* Makes it pop aggressively */
+    }
+
+  /* 97%: A second fast shake with a different position */
+    97% { 
+    transform: translate(-10px, 5px);
+    filter: hue-rotate(90deg); /* Distorts the colors */
+    }
+
+  /* 100%: It snaps back to the original image */
+    100% { 
+    background-image: url('neth.jpg'); 
+    transform: translate(0,0); 
+    }
+}
+
+/* Styles footer */
+footer {
+    background-color: #414141;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 10%;
+    font-family: 'Courier New', Courier, monospace
+}

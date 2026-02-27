@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url(glitch.gif);
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>  
+<body>
+        <div id="jumpscare-overlay">
+            <img src="scary.jpg" id="jumpscare-image">
+        </div>
+        <audio id="scare-sound" src="scarysound.mp3" preload="auto"></audio>
+
+    <div id="custom-cursor"></div>
+    <div class="top-container">
+        <img src="neth.jpg" id="ghost-img" style="width: 20%; height: auto;">
+    </div>
+        <img src="eyes.gif">
+        <h1 class="flicker-heading">Welcome to my Website</h1>
+
+
+        <h2 class="glitch-text">y̷̜̪̞̦̿p̸̯̤̻̘̭͎̪̈̅̓͐̀̈́͛͛̋̈̈̕͜͝ͅe̶̙̺̟͍̟̠̦͕͛̾̃̍̄̔̉̐͐̀̂̂͘͠ ̵̝̞̥̞͇̞̘͓̺̳́̌̓͘f̴͖̙̤͚͓̦͔͕̪̓̈́̒͛̏͑a̶̧̡̛̺̺̠̣̙̜̬̮͙͉͚̭͌͋̈́̌͌͂͂̆̐̐̕͠ṡ̶̡̭̋̈́̑͊̅̐̚ͅṱ̴̘̲͚̥͎̞̻̖͐̔̅̋͌̔͘͝.̸̢̛̣̹̤̖̩̱̹̞̀̋ ̷̨̱̘̤͚̠̦̼͈̗͕̬̠̓̊̀́͐̑̿̾̽̅̄́̂͘T̶̡̳̞̺͛̾̏͊͑̌h̵̩͗͒͒̐̓̐̈́͐̊e̵̢̠̙̳̼̐̀̓̑̄̀̅͐͑̉̍̕͠ ̴͕̺͚͖̣̩̳̩͖̇̓͒͐̃͊͛̃̽͘͝͠s̸̨̛̯͆̔̈́͂̓͋͗̉h̵̤͙̭͚͈͋͆̍̃̃̀̇a̵̢͎͈̬̽̍̌̑̇̀̿̾̆͑̈́͊̌d̶̞͂̀̈̏͂̈̆̇̍̐͋̏̕̕o̸̢̝̜̮̲͙̓̇̌̏̽̏͗̿͋͋͘̚͝͝͝w̵̛̼̥͕̩̭̠̥̪̠͂́͆͂͐͋͘͝ͅs̷̙͚̯͆ ̵̡̨̨͚̯̗̖̘̫̠̿́̊̾͆͌̇͋̀̀͘ͅͅâ̷̡̪̱̮̮̜̬̊̆͛͛͊̈̓̀̋͗̄͠r̸̺̓̈́̈́̈͌̅̍͌͋̂e̴̡̢͖̠̹̹͓̖̱̥̲̋̐̅̆͗͌͋̔̊̏́̊́̀̔͜ ̸͚͙̪̣͝g̵̰̲̳͍̯̙̹̱̣̜̩̻͊̾̆͐͛̉͛͂̃̕͜͜͝e̸̡̧͉̟̲͚̬͚̱͇͇̅̂̋̉̅̅̈́̃̎̀͑̋̚̕̚ţ̸̢̼̞̙̳̮̊̀͑̄̅͝t̸̢̢͔̠̘͖̣̏̓̈̉͒̒̈́̆̕͘i̴͇̜͕̓̓̎̈́̆̀̈͠͝ņ̶̖͔̪̻̱̝̖̍̽̓͊́̂̔̒͝͝ğ̴̺̙̮͖̫ͅ ̷̧͖̪͚̼̗̼̜͚̙̔̽̌̂̋͊̐̋̂̃̉̑͝ͅr̸͕̲̤͉͐̈́̐͛e̴̺͇̲͇͇̱͖̹̝̠̓͛̋͘͜͠s̷̰̗͑́͗͂͋͜ẗ̷̡͉̳̬͓͔̖́̽̑̈́͌̂̑͐̈́̐̚͝l̷̢̧̰͕͚̝̘̝̦̝͔̂̍̇̌̐͒̋̃͜ě̶̜̳͔͙̣͓̞̮̠͑̀̆̍̇̔͊͊͘s̴̨̖̣̰̱̀͛͆̊͂s̸͉͙̝̺̦̮̖͖̝̈́̀̐̀̚.̷̲͖͇͈͖̻̥͙̼͍͍̦̤̔̊̈͗̇̆̐̀̈́̆͒͘</h2>
+
+    </div>
+    <div class="login-page">
+<div class="form">
+<form class="register-form"> 
+    <input type="text" placeholder="Username"/>
+    <input type="text" placeholder="Email"/>
+    <input type="text" placeholder="Password"/>
+        <button>Sign Up</button>
+        <p class="message a">Already Registered? <a href="#"> Sign In </a></p>
+</form>
+
+<form class="login-form">
+    <input type="text" placeholder="Username"/>
+    <input type="Password" placeholder="Password"/>
+        <a href="index.html">
+            <h3>Sign In</h3>
+        </a>
+        <p class="message">No Account?<a href="#">Sign Up</a></p>
+</form>
+</div>
+</div>
+
+<script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+<script>
+    $('.message a').click(function(){
+    $('form').animate({height: "toggle", opacity: "toggle"}, "slow")
+    });
+
+    const ghostImg = document.getElementById('ghost-img');
+const jumpscare = document.getElementById('jumpscare-overlay');
+const audio = document.getElementById('scare-sound'); // Find the audio element
+
+ghostImg.addEventListener('click', () => {
+  // 1. Play the sound immediately
+    audio.currentTime = 0; // Rewind to start
+    audio.play();
+
+  // 2. Show the jumpscare image
+    jumpscare.style.display = 'flex';
+
+  // 3. Hide the image after 1.5 seconds
+    setTimeout(() => {
+    jumpscare.style.display = 'none';
+}, 1500); 
+});
+</script>
+
+<script>
+    const cursor = document.getElementById('custom-cursor');
+
+    document.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+    });
+</script>
+
+</body>
+    <footer>
+        <p>© 2026 My Website</p>
+    </footer>
+</html>
